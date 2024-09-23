@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio--4</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      body {
+        background-color: #000000;
+      }
+      .home-page {
+      
+        background-image: url("img/titlebg.png");
+        background-size: cover;
+      }i{
+        width: 40px;
+        height: 40px;
+        background-color: aliceblue;
+        border-radius: 40px;
+        text-align: center;
+        color: black;
+        line-height: 40px;
+      }.img-box-1{
+        height: 500px;
+        background-image: url("img/title.png");
+        background-size: cover;
+        background-position: center;
+        filter: drop-shadow(0 -6mm 4mm rgb(160, 0, 210));
+      }.active{
+        background-color: yellow;
+      }.Resume{
+     
+        background-color: #111111;
+      }.about{
+        font-weight: 900;
+      }.btn-outline-warning{
+        border-radius: 30px;
+      }.card{
+        box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+      }.skills{
+      
+        background-color: #111111;
+      }:root {
+  --progress-bar-width: 200px;
+  --progress-bar-height: 200px;
+  --font-size: 2rem;
+}
+
+.circular-progress {
+  width: var(--progress-bar-width);
+  height: var(--progress-bar-height);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inner-circle {
+  position: absolute;
+  width: calc(var(--progress-bar-width) - 30px);
+  height: calc(var(--progress-bar-height) - 30px);
+  border-radius: 50%;
+  background-color: lightgrey;
+}
+
+.percentage {
+  position: relative;
+  font-size: var(--font-size);
+  color: rgb(0, 0, 0, 0.8);
+}.education{
+background-color: #111111;
+}.portfolio{
+  
+    background-color: #111111;
+}.img-box-2{
+    height: 200px;
+    background-color: #d32a2a;
+    background-size: cover;
+    background-image: url("img/woek.jfif");
+}.touch{
+    height: 500px;
+    background-color:#111111 ;
+}
+   </style>
+  </head>
+  <body>
+    <div class="container home-page p-0">
+      <div class="row m-0 p-4">
+        <div class="col-12 text-white d-flex justify-content-end align-items-center">
+          <i class="fa-regular fa-lightbulb data-bs-toggle="tooltip" data-bs-placement="top" title="Light-mode" style="font-size: 2em"></i>
+        </div>
+      </div>
+      <div class="row  m-0">
+        <div class="col-4">
+            <div class="img-box-1"></div>
+        </div>
+        <div class="col-7 d-flex justify-content-center align-items-center">
+            <div class="text-content text-white">
+                <h1 class="text-center">I'M SHIVAM SINGH. <br><span id="element"></span></h1>
+                <p style="font-size: 1.1em;" class="p-4 text-center">I'm MERN stack Based web designer &amp; Frontend developer &amp; Backend Developer <br>
+                Creating &amp; user friendly Website. I am passionate about building exciting <br> software that improves  the lives around me</p>
+            </div>
+        </div>
+        <div class="col-1 d-flex justify-content-center align-items-center">
+            <ul class="nav flex-column">
+  <li class="nav-item">
+    <a class="nav-link " aria-current="page" href="#"><i class="fa-solid fa-house d-flex align-items-center justify-content-center active"></i></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">
+        <i class="fa-solid fa-user d-flex justify-content-center align-items-center"></i>
+    </a>
+  </li>
+  
+  <li class="nav-item">
+    <a class="nav-link" href="#">
+        <i class="fa-solid fa-briefcase d-flex justify-content-center align-items-center"></i>
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">
+        <i class="fa-solid fa-message d-flex justify-content-center align-items-center"></i>
+    </a>
+  </li>
+ 
+</ul>
+        </div>
+      </div>
+    </div>
+    <div class="container Resume p-0">
+        <div class="row m-0 p-4">
+            <div class="col-12 text-center text-white">
+                <h1 class="about">ABOUT <span class="text-warning">ME</span></h1>
+            </div>
+        </div>
+        <div class="row m-0 p-4">
+            <div class="col-5 p-0 text-white">
+                <div class="row m-0 " >
+                    <div class="col-12">
+                        <h3>PERSONAL INFOS</h3>
+                    </div>
+                </div>
+                <div class="row m-0 text-white">
+                <div class="col-6">
+                    <p>First Name  <b class="text-warning">Shivam</b></p> 
+                    <p>Age  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b class="text-warning">24 years</b></p> 
+                    <p>FreeLancer <b class="text-warning">Avilable</b></p> 
+                    <p>Phone No. <b class="text-warning">8896497776</b></p> 
+                    <p>Github. <b class="text-warning"><a href="https://github.com/ShivamMathtech " class="text-warning">Github</a></b></p> 
+
+                </div>
+                <div class="col-6 text-white">
+                    <p>Last Name  <b class="text-warning">Singh</b></p>
+                    <p>Nationality  <b class="text-warning">Indian</b></p>
+                    <p>Current Address  <b class="text-warning">Dehradun</b></p>
+                    <p>Email  <b class="text-warning">drshivam49@gmail.com</b></p>
+                    <p>Language  <b class="text-warning">English ,Hindi</b></p>
+                </div>
+                </div>
+                <div class="rowm-0 p-4">
+                    <div class="col-12 d-flex  justify-content-center align-items-center">
+                        <button class="btn btn-outline-warning">DOWNLOAD CV</button>
+                    </div>
+                </div>
+            
+            </div>
+            <div class="col-6 p-4">
+                <div class="row m-0 p-2">
+                    <div class="col-6">
+                        <div class="card bg-dark d-flex justify-content-center align-items-center">
+                            <div class="exp">
+                                <span><h1 class="text-warning">4<sup class="text-warning">+</sup></h1></span>
+                                <p class="text-white">
+                                 YEARS OF  <br>EXPERIENCE
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card bg-dark d-flex justify-content-center align-items-center">
+                            <div class="exp">
+                                <span><h1 class="text-warning">100<sup class="text-warning">+</sup></h1></span>
+                                <p class="text-white text-center">
+                                 COMPELETE  <br>PROJECT
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row m-0 p-2">
+                    <div class="col-6">
+                        <div class="card bg-dark d-flex justify-content-center align-items-center">
+                            <div class="exp">
+                                <span><h1 class="text-warning">51<sup class="text-warning">+</sup></h1></span>
+                                <p class="text-white">
+                                HAPPY  <br>CUSTOMERS
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card bg-dark d-flex justify-content-center align-items-center">
+                            <div class="exp">
+                                <span><h1 class="text-warning">10<sup class="text-warning">+</sup></h1></span>
+                                <p class="text-white text-center">
+                                 AWARD  <br>WON
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1 d-flex justify-content-center align-items-center">
+                 <ul class="nav flex-column">
+  <li class="nav-item">
+    <a class="nav-link " aria-current="page" href="#"><i class="fa-solid fa-house d-flex align-items-center justify-content-center "></i></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">
+        <i class="fa-solid fa-user d-flex justify-content-center align-items-center active"></i>
+    </a>
+  </li>
+  
+  <li class="nav-item">
+    <a class="nav-link" href="#">
+        <i class="fa-solid fa-briefcase d-flex justify-content-center align-items-center"></i>
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">
+        <i class="fa-solid fa-message d-flex justify-content-center align-items-center"></i>
+    </a>
+  </li>
+ 
+</ul>
+            </div>
+        </div>
+    </div>
+    <div class="container skills p-0">
+      <div class="row m-0 p-4">
+        <div class="col-12 text-center text-white"><h1>MY <span class="text-warning">SKILLS</span></h1></div>
+      </div>
+      <div class="row m-0 p-4">
+        <div class="col-3">
+            <div class="card p-4 bg-dark d-flex justify-content-center align-items-center">
+            <div class="circular-progress" data-inner-circle-color="lightgrey" data-percentage="80" data-progress-color="crimson" data-bg-color="black">
+             <div class="inner-circle"></div>
+             <p class="percentage">0%</p>
+            
+            </div>
+                <h4 class="text-white">HTML</h4>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card p-4 bg-dark d-flex justify-content-center align-items-center">
+            <div class="circular-progress" data-inner-circle-color="lightgrey" data-percentage="80" data-progress-color="crimson" data-bg-color="black">
+             <div class="inner-circle"></div>
+             <p class="percentage">0%</p>
+            
+            </div>
+                <h4 class="text-white">CSS</h4>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card p-4 bg-dark d-flex justify-content-center align-items-center">
+            <div class="circular-progress" data-inner-circle-color="lightgrey" data-percentage="80" data-progress-color="crimson" data-bg-color="black">
+             <div class="inner-circle"></div>
+             <p class="percentage">0%</p>
+            
+            </div>
+                <h4 class="text-white">JAVASCRIPT</h4>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card p-4 bg-dark d-flex justify-content-center align-items-center">
+            <div class="circular-progress" data-inner-circle-color="lightgrey" data-percentage="80" data-progress-color="crimson" data-bg-color="black">
+             <div class="inner-circle"></div>
+             <p class="percentage">0%</p>
+            
+            </div>
+                <h4 class="text-white">BOOTSTRAP</h4>
+            </div>
+        </div>
+      </div>
+      <div class="row m-0 p-4">
+        <div class="col-3">
+            <div class="card p-4 bg-dark d-flex justify-content-center align-items-center">
+            <div class="circular-progress" data-inner-circle-color="lightgrey" data-percentage="80" data-progress-color="crimson" data-bg-color="black">
+             <div class="inner-circle"></div>
+             <p class="percentage">0%</p>
+            
+            </div>
+                <h4 class="text-white">JQUERY</h4>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card p-4 bg-dark d-flex justify-content-center align-items-center">
+            <div class="circular-progress" data-inner-circle-color="lightgrey" data-percentage="80" data-progress-color="crimson" data-bg-color="black">
+             <div class="inner-circle"></div>
+             <p class="percentage">0%</p>
+            
+            </div>
+                <h4 class="text-white">REACT JS</h4>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card p-4 bg-dark d-flex justify-content-center align-items-center">
+            <div class="circular-progress" data-inner-circle-color="lightgrey" data-percentage="80" data-progress-color="crimson" data-bg-color="black">
+             <div class="inner-circle"></div>
+             <p class="percentage">0%</p>
+            
+            </div>
+                <h4 class="text-white">NODE JS</h4>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card p-4 bg-dark d-flex justify-content-center align-items-center">
+            <div class="circular-progress" data-inner-circle-color="lightgrey" data-percentage="80" data-progress-color="crimson" data-bg-color="black">
+             <div class="inner-circle"></div>
+             <p class="percentage">0%</p>
+            
+            </div>
+                <h4 class="text-white">MONGO DB</h4>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="container education p-0">
+        <div class="row m-0 p-4">
+            <div class="col-12 text-center">
+              <h2 class="text-white">EXPERIENCE &amp; EDUCATION</h2>
+            </div>
+        </div>
+        <div class="row p-2">
+         <div class="col-6 p-4 ">
+     <ul class="list-group list-group-flush bg-secondary">
+        <li class="list-group-item">
+        <span class="badge bg-dark rounded-pill">2019-2022</span>
+        <p><b>B.Sc</b>- <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, quae?</p>
+        <p>github for project <a href="https://github.com/ShivamMathtech">Project</a></p>
+        </li>
+        <li class="list-group-item">
+        <span class="badge bg-dark rounded-pill">2022-2026</span>
+        <p><b>B.TECH</b>- <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, quae?</p>
+        <p>github for project <a href="https://github.com/ShivamMathtech">Project</a></p>
+        </li>
+        </li>
+        <li class="list-group-item">
+        <span class="badge bg-dark rounded-pill">2023-2024</span>
+        <p><b>MERN DEVELOPER</b>- <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, quae?</p>
+        <p>github for project <a href="https://github.com/ShivamMathtech">Project</a></p></li>
+        </ul>
+    </div>
+         <div class="col-6 p-4">
+            <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+        <span class="badge bg-dark rounded-pill">2019-2024</span>
+        <p><b>WEB DEVELOPER</b>- <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, quae?</p>
+        <p>github for project <a href="https://github.com/ShivamMathtech">Project</a></p>
+        </li>
+        <li class="list-group-item">
+        <span class="badge bg-dark rounded-pill">2023-2024</span>
+        <p><b>UI /UX DESIGNRT</b>- <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, quae?</p>
+        <p>github for project <a href="https://github.com/ShivamMathtech">Project</a></p>
+        </li>
+        </li>
+        <li class="list-group-item">
+        <span class="badge bg-dark rounded-pill">2023-2024</span>
+        <p><b>MERN DEVELOPER</b>- <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, quae?</p>
+        <p>github for project <a href="https://github.com/ShivamMathtech">Project</a></p></li>
+        </ul>
+         </div>
+        </div>
+    </div>
+    <div class="container portfolio p-0">
+        <div class="row m-0 p-4">
+            <div class="col-12 text-center text-white">
+               <h1 style="font-weight: 900;">MY <span class="text-warning">PORTFOLIO</span></h1>
+            </div>
+        </div>
+        <div class="row p-3 m-0">
+          <div class="col-11 ">
+            <div class="row p-0">
+             <div class="col-12 d-flex justify-content-center">
+              <ul class="nav">
+                <li class="nav-item"><a href="" class="nav-link text-warning">ALL</a></li>
+                <li class="nav-item"><a href="" class="nav-link text-white">LOGO</a></li>
+                <li class="nav-item"><a href="" class="nav-link text-white">GRAPHIC DESIGN</a></li>
+                <li class="nav-item"><a href="" class="nav-link text-white">TEMPLATE</a></li>
+                </ul>
+             </div>
+            </div>
+            <div class="row m-0 p-2">
+               <div class="col-4">
+                <div class="img-box-2"></div>
+               </div>
+               <div class="col-4">
+                <div class="img-box-2"></div>
+               </div>
+               <div class="col-4">
+                <div class="img-box-2"></div>
+               </div>
+            </div>
+            <div class="row m-0 p-2">
+               <div class="col-4">
+                <div class="img-box-2"></div>
+               </div>
+               <div class="col-4">
+                <div class="img-box-2"></div>
+               </div>
+               <div class="col-4">
+                <div class="img-box-2"></div>
+               </div>
+            </div>
+          </div>
+          <div class="col-1 d-flex justify-content-center">
+             <ul class="nav flex-column">
+  <li class="nav-item">
+    <a class="nav-link " aria-current="page" href="#"><i class="fa-solid fa-house d-flex align-items-center justify-content-center "></i></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">
+        <i class="fa-solid fa-user d-flex justify-content-center align-items-center "></i>
+    </a>
+  </li>
+  
+  <li class="nav-item">
+    <a class="nav-link" href="#">
+        <i class="fa-solid fa-briefcase d-flex justify-content-center align-items-center active"></i>
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">
+        <i class="fa-solid fa-message d-flex justify-content-center align-items-center"></i>
+    </a>
+  </li>
+ 
+</ul>
+          </div>
+        </div>
+    </div>
+    <div class="container touch p-0">
+        <div class="row m-0 p-4">
+            <div class="col-12 text-center text-white">
+                <h1 style="font-weight: 900;">GET IN <span class="text-warning">TOUCH</span></h1>
+            </div>
+        </div>
+        <div class="row m-0 p-4">
+            <div class="col-4 d-flex justify-content-center">
+               <div class="text-2 text-white">
+                <h4>DON'T BE SHY !</h4>
+                <p>Lorem ipsum dolor sit amet consectetur  <br>adipisicing elit. Atque, consectetu
+                    r <br>Lorem, ipsum dolor..</p>
+                <address>
+                    NAUGAON ,MANDUWALA DEHRADUN <br>
+                    UTTARAKHAND INDIA
+                </address>  
+                <small>
+                    Mail Me <br> drshivam49@gmail.com
+                </small>   <br>
+                <small>
+                    Call Me <br> 8896497776
+                </small>  
+               </div>
+            </div>
+            <div class="col-7 d-flex justify-content-center">
+            <form class="row g-3">
+  <div class="col-md-6">
+    <input type="email" class="form-control" id="inputEmail4" placeholder="YOUR NAME">
+  </div>
+  <div class="col-md-6">
+    <input type="password" class="form-control" id="inputPassword4" placeholder="EMAIL">
+  </div>
+  <div class="col-12">
+    <input type="text" class="form-control" id="inputAddress" placeholder="YOUR SUBJECT">
+  </div>
+  <div class="form-floating">
+  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+  <label for="floatingTextarea">Comments</label>
+</div>
+  <div class="col-12 d-flex justify-content-center">
+    <button type="submit" class="btn btn-outline-warning w-50 ">SEND MESSAGE</button>
+  </div>
+</form>
+            </div>
+            <div class="col-1">
+                 <ul class="nav flex-column">
+  <li class="nav-item">
+    <a class="nav-link " aria-current="page" href="#"><i class="fa-solid fa-house d-flex align-items-center justify-content-center "></i></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">
+        <i class="fa-solid fa-user d-flex justify-content-center align-items-center "></i>
+    </a>
+  </li>
+  
+  <li class="nav-item">
+    <a class="nav-link" href="#">
+        <i class="fa-solid fa-briefcase d-flex justify-content-center align-items-center "></i>
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">
+        <i class="fa-solid fa-message d-flex justify-content-center align-items-center active"></i>
+    </a>
+  </li>
+ 
+</ul>
+            </div>
+            <div class="row p-4">
+                <hr class="text-white">
+                <div class="col-12 text-center text-white">
+                    &copy; All Rights Reserved to the <a href="https://github.com/ShivamMathtech">Shivam Singh</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,86 @@
+body {
+  background-color: #000000;
+}
+.home-page {
+  background-image: url("img/titlebg.png");
+  background-size: cover;
+}
+i {
+  width: 40px;
+  height: 40px;
+  background-color: aliceblue;
+  border-radius: 40px;
+  text-align: center;
+  color: black;
+  line-height: 40px;
+}
+.img-box-1 {
+  height: 500px;
+  background-image: url("img/title.png");
+  background-size: cover;
+  background-position: center;
+  filter: drop-shadow(0 -6mm 4mm rgb(160, 0, 210));
+}
+.active {
+  background-color: yellow;
+}
+.Resume {
+  background-color: #111111;
+}
+.about {
+  font-weight: 900;
+}
+.btn-outline-warning {
+  border-radius: 30px;
+}
+.card {
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.skills {
+  background-color: #111111;
+}
+:root {
+  --progress-bar-width: 200px;
+  --progress-bar-height: 200px;
+  --font-size: 2rem;
+}
+
+.circular-progress {
+  width: var(--progress-bar-width);
+  height: var(--progress-bar-height);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inner-circle {
+  position: absolute;
+  width: calc(var(--progress-bar-width) - 30px);
+  height: calc(var(--progress-bar-height) - 30px);
+  border-radius: 50%;
+  background-color: lightgrey;
+}
+
+.percentage {
+  position: relative;
+  font-size: var(--font-size);
+  color: rgb(0, 0, 0, 0.8);
+}
+.education {
+  background-color: #111111;
+}
+.portfolio {
+  background-color: #111111;
+}
+.img-box-2 {
+  height: 200px;
+  background-color: #d32a2a;
+  background-size: cover;
+  background-image: url("img/woek.jfif");
+}
+.touch {
+  height: 500px;
+  background-color: #111111;
+}
